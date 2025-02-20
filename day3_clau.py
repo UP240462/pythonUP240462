@@ -49,7 +49,7 @@ print("The distance between the two points is: ", distance)
 slope = (y2 - y1) / (x2 - x1)
 print("The slope is: ", slope)
 
-#10 Compare the slopes in tasks 8 and 9
+#10 Compare the slopes in tasks 8 and 9 
 pendiente1< slope
 if True:
     print("The slope is greater than pendiente1")
