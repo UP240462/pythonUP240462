@@ -14,5 +14,14 @@ finalWord = w1 + " " + w2 + " " + w3
 print(finalWord)
 
 #3 Declare a variable named company and assign it to an initial value "Coding For All".
-company = int("Coding For All")
+company = "Coding For All"
+
+#4 Print the variable company using print().
 print(company)
+
+#5 Print the length of the company string using len() method and print().
+print("The lenght is: ", len(company))
+
+#6 Change all the characters to uppercase letters using upper() method.
+txt = ""
+string.upper
