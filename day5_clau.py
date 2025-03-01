@@ -33,6 +33,10 @@ print("Empresa del medio: ",itCompanies[3])
 print("La última empresa es: ", itCompanies[6])
 
 #10 Print the list after modifying one of the companies.
-print(itCompanies.replace("Facebook", "Twitter"))
+itCompanies [0] = "Netflix"
+print(itCompanies)
 
-#11 
+#11 Add an IT company to it_companies
+itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+itCompanies.insert(2, "BOZ IT DEVELOPMENT")
+print(itCompanies)
