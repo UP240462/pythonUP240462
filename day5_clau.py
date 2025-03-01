@@ -19,3 +19,20 @@ mixedDataTypes = ["Claudia, 18, 1.60, soltera, Santa Fe #259"]
 print(mixedDataTypes)
 
 #6 Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
+itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+#7 Print the list using print()
+print(itCompanies)
+
+#8 Print the number of companies in the list
+print("El total de empresas de la lista es: ", len(itCompanies))
+
+#9 Print the first, middle and last company
+print("Primera empresa: ", itCompanies[0])
+print("Empresa del medio: ",itCompanies[3])
+print("La última empresa es: ", itCompanies[6])
+
+#10 Print the list after modifying one of the companies.
+print(itCompanies.replace("Facebook", "Twitter"))
+
+#11 
