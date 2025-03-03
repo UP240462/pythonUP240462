@@ -38,5 +38,14 @@ print(itCompanies)
 
 #11 Add an IT company to it_companies
 itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
-itCompanies.insert(2, "BOZ IT DEVELOPMENT")
+itCompanies.insert(2, "Boz It Development")
+print(itCompanies)
+
+#12 Insert an IT company in the middle of the companies list.
+itCompanies.insert(4, "Red Bull")
+print(itCompanies)
+
+#13 Change one of the it_companies names to uppercase (IBM excluded!)
+itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+itCompanies.uppercase(5)
 print(itCompanies)
