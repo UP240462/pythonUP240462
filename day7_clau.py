@@ -19,4 +19,26 @@ print(itCompanies.pop())
 #5 What is the difference between remove and discard
 #Si usando remove() el item no se encuentra en el set, arrojará error
 #En cambio discard no arrojará nada
- 
+
+#Exercises: Level 2
+#1 Join A and B
+set1 = {'A'}
+set2 = {'B'}
+set1.update(set2)
+
+#2 Find A intersection B
+
+
+#3 Is A subset of B
+
+
+#4 Are A and B disjoint sets
+
+
+#5 Join A with B and B with A
+
+
+#6 What is the symmetric difference between A and B
+
+
+#7 Delete the sets completely
