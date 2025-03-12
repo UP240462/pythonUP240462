@@ -1,0 +1,1 @@
+Elimina la carpeta de 30 dias de python de tu repositorio
