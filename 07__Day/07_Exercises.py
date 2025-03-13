@@ -1,4 +1,4 @@
-#Exercises: Level 1
+                                         #Exercises: Level 1
 #1 Find the length of the set it_companies
 itCompanies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
 print(len(itCompanies))
@@ -20,7 +20,7 @@ print(itCompanies.pop())
 #Si usando remove() el item no se encuentra en el set, arrojará error
 #En cambio discard no arrojará nada
 
-#Exercises: Level 2
+                                         #Exercises: Level 2
 #Join A and B
 A = {19, 22, 24, 20, 25, 26}
 B = {19, 22, 20, 25, 26, 24, 28, 27}
@@ -62,7 +62,7 @@ B = {19, 22, 20, 25, 26, 24, 28, 27}
 del A
 del B
 
-#Exercises: Level 3
+                                        #Exercises: Level 3
 #Convert the ages to a set and compare the length of the list and the set, which one is bigger?
 age = [22, 19, 24, 25, 26, 24, 25, 24]
 setAge = set(age)
