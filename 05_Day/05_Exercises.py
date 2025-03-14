@@ -78,7 +78,7 @@ itCompanies.pop(0)
 print(itCompanies)
 
 #22 Remove the middle IT company or companies from the list
-itCompanies.remove("Apple")
+itCompanies.remove("APPLE")
 print(itCompanies)
 
 #23 Remove the last IT company from the list
@@ -145,3 +145,6 @@ print("Lista 2: ", P2Lista)
 paises.countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
 p1, p2, p3, *scandic = paises.countries
 print(*scandic) 
+
+
+#Te falta el archivo paises.py
