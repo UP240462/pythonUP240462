@@ -1,4 +1,4 @@
-                                        #Exercises: Level 1
+'''                                        #Exercises: Level 1
 #1 Iterate 0 to 10 using for loop, do the same using while loop.
 count = 0
 while count < 11:
@@ -85,8 +85,22 @@ print('La suma de pares es: ',sumEven)
 print('La suma de impares es: ',sumOdd)
 
                                       #Exercises: Level 3
-#Go to the data folder and use the countries.py file. Loop through the countries 
+#1 Go to the data folder and use the countries.py file. Loop through the countries 
 # and extract all the countries containing the word land.
 import paises 
 for P in paises.countries:
     print(P)
+
+#2 This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+fruits = ['banana', 'orange', 'mango', 'lemon']
+for F in reversed(fruits):
+    print(F)
+'''
+
+#3 Go to the data folder and use the countries_data.py file.
+                                                    #What are the total number of languages in the data
+                                                    #Find the ten most spoken languages from the data
+                                                    #Find the 10 most populated countries in the world
+import COUNTRIES
+if 'population' in paiSES:
+    popul = COUNTRIES['population']
