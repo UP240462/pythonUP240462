@@ -87,3 +87,6 @@ word = "I am a teacher and I love to inspire and teach people"
 totalWords = word.split()
 print("Las palabras unicas son: ", len(totalWords))
 print("Las palabras unicas son; ", totalWords)
+
+#REVISADO
+print("Revisado")
