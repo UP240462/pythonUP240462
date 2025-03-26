@@ -1,4 +1,4 @@
-'''                                        #Exercises: Level 1
+                                       #Exercises: Level 1
 #1 Iterate 0 to 10 using for loop, do the same using while loop.
 count = 0
 while count < 11:
@@ -95,12 +95,16 @@ for P in paises.countries:
 fruits = ['banana', 'orange', 'mango', 'lemon']
 for F in reversed(fruits):
     print(F)
-'''
 
 #3 Go to the data folder and use the countries_data.py file.
                                                     #What are the total number of languages in the data
                                                     #Find the ten most spoken languages from the data
                                                     #Find the 10 most populated countries in the world
 import COUNTRIES
-if 'population' in paiSES:
+if 'population' in COUNTRIES.paiSES:
     popul = COUNTRIES['population']
+    print(popul)
+
+idiomas = []
+for pais in COUNTRIES.paiSES:
+    idiomas.append(pais['language'])
