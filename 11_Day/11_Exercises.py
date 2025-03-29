@@ -1,3 +1,4 @@
+'''
                                          #Exercises: Level 1
 #1 Declare a function add_two_numbers. It takes two parameters and it returns a sum.
 def addTwoNumbers():
@@ -102,11 +103,11 @@ def addItem(pop,item):
     pop.append(item)
     return pop
 print(addItem(['miel','loop','heart'],'pain'))
-
+'''
 #12 Declare a function named remove_item. It takes a list and an item parameters.
 # It returns a list with the item removed from it.
 def removeItem(pop,item):
-    pop.remove(item)
+    clr = removeItem.pop(pop,item)
     return pop
 print(removeItem(['miel','loop','heart'],'loop'))
-
+print(removeItem([3,8,9,13],'8'))

@@ -103,16 +103,35 @@ for F in reversed(fruits):
                                                     #Find the ten most spoken languages from the data
                                                     #Find the 10 most populated countries in the world
 
-import COUNTRIES
-IDIOMAS = list()
-for pais in COUNTRIES.paiSES:
-    print(pais['languages'])
-    IDIOMAS.append(pais['languages'])
+import COUNTRIES as lol
+paises = lol.paiSES
+idioms = list()
+repTdioma=0
+for pais in paises:
+    for idioma in pais["languages"]:
+        if idioma not in idioms:
+            idioms.append(idioma)
+        else:
+            repTdioma+=1
 
-IDIOMAS = list(IDIOMAS)
-print(IDIOMAS)
-for idioma in IDIOMAS:
-    for pais in COUNTRIES.paiSES:
-        if idioma in ['languages']:
-            IDIOMAS[idioma]=pais['population'] + IDIOMAS[idioma]
+print('El total de idiomas es: ',len(idioms))
+print('La repetición de idiomas es de: ',repTdioma)
 
+dcIdm={}
+for idioma in idioms:
+    dcIdm[idioma]=0
+
+for idioma in dcIdm:
+    for pais in paises:
+        if idioma in pais["languages"]:
+            dcIdm[idioma]+=pais["population"]
+
+menorMayor=sorted(dcIdm.values(),reverse=True)
+the10=menorMayor[0:10]
+
+for valor in the10:
+    for idioma in dcIdm:
+        if valor==dcIdm[idioma]:
+            print(idioma,valor)
+
+print('')
