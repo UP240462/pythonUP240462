@@ -103,11 +103,60 @@ def addItem(pop,item):
     pop.append(item)
     return pop
 print(addItem(['miel','loop','heart'],'pain'))
-'''
+
 #12 Declare a function named remove_item. It takes a list and an item parameters.
 # It returns a list with the item removed from it.
-def removeItem(pop,item):
-    clr = removeItem.pop(pop,item)
-    return pop
-print(removeItem(['miel','loop','heart'],'loop'))
-print(removeItem([3,8,9,13],'8'))
+def removeItem(lst,item):
+    if item in lst:
+        lst.remove(item)
+    return lst
+numbers= [1,2,3,2,4]
+food=['mango','grapes','banana','lemon','piña']
+print(removeItem(numbers, 2))
+print(removeItem(food, 'banana'))
+
+#13 Declare a function named sum_of_numbers. 
+# It takes a number parameter and it adds all the numbers in that range.
+def sumOfNumbers(n):
+    return sum(range(1,n+1))
+print(sumOfNumbers(5)) #suma los numeros del 1 al 5 de uno en 1
+
+#14 Declare a function named sum_of_odds. 
+# It takes a number parameter and it adds all the odd numbers in that range.
+def sumOfOdds(o):
+    return sum(num for num in range(1,o+1)if num %2!=0)
+print(sumOfOdds(10)) #suma los impares qeu hat del 1 al 10
+
+#15 Declare a function named sum_of_even. 
+# It takes a number parameter and it adds all the even numbers in that - range.
+def sumOfEven(e):
+    return sum(num for num in range(1,e+1)if num %2==0)
+print(sumOfEven(10)) #suma los pares que hay del 1 al 10
+
+                                             #Exercises: Level 2
+#1 Declare a function named evens_and_odds . It takes a positive integer as parameter and
+#  it counts number of evens and odds in the number.
+def evenAndOdds(u):
+    if not isinstance(u,int) or u<=0:
+        return'Debe ingresar un número entero positivo'
+    evens=0
+    odds=0
+    for digit in str(u):
+        if int(digit)%2==0:
+            evens+=1
+        else:
+            odds+=1
+    return f'Dígitos pares: {evens}, Dígitos impares: {odds}'
+print(evenAndOdds(156))
+'''
+#2 Call your function factorial, it takes a whole number as a parameter and
+#  it return a factorial of the number
+def factorial(number):
+    return 
+
+#3 Call your function is_empty, it takes a parameter and it checks if it is empty or not
+
+
+#4 Write different functions which take lists. They should calculate_mean,
+#  calculate_median, calculate_mode, calculate_range, calculate_variance,
+#  calculate_std (standard deviation).
