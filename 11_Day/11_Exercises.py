@@ -148,15 +148,94 @@ def evenAndOdds(u):
             odds+=1
     return f'Dígitos pares: {evens}, Dígitos impares: {odds}'
 print(evenAndOdds(156))
-'''
+
 #2 Call your function factorial, it takes a whole number as a parameter and
 #  it return a factorial of the number
-def factorial(number):
-    return 
+numero=int(input('Put a number: '))
+def factorial(numero):
+    if numero <= 0:
+        return 1
+    factorial = 1
+    while numero > 0:
+        factorial = factorial * numero
+        numero -= 1
+    return factorial
+print(factorial(numero))
 
 #3 Call your function is_empty, it takes a parameter and it checks if it is empty or not
-
+put=input('Put something: ')
+def isEmpty(something):
+    if put=="":
+        return "Empty(you didn't put somenthing)."
+    else:
+        return "Not empty."
+print(isEmpty(put))
 
 #4 Write different functions which take lists. They should calculate_mean,
 #  calculate_median, calculate_mode, calculate_range, calculate_variance,
 #  calculate_std (standard deviation).
+vals=[6,9,35,37,43,95,38,14]
+def calMean(mean):
+    return f'The mean value is {sum(vals)/len(vals)}'
+print(calMean(vals))
+
+def calMedian(median):
+    vals.sort()
+    l=len(vals)
+    mitad=int(l/2)
+    # Si la longitud es par, promediar elementos centrales
+    if l%2==0:
+        mediana=(vals[mitad - 1]+vals[mitad]) / 2
+    else:
+        # Si no, es la del centro
+        mediana = vals[mitad]
+    return f'The median value is {mediana}'
+print(calMedian(vals))
+
+def calMode(moda):
+        from statistics import mode
+        mod=mode(vals)
+        return f'The mode is {mod}'    
+print(calMode(vals))
+
+def calRange(range):
+    r=max(vals)-min(vals)
+    return f'The range is {r}'
+print(calRange(vals))
+
+def calVariance(var):
+    from statistics import variance
+    v=variance(vals)
+    return f'The variance is {v}'
+print(calVariance(vals))
+
+def calStd(stt):
+    from statistics import stdev
+    st=stdev(vals)
+    return f'The Standard deviation is {st}'
+print(calStd(vals))
+'''
+                                              #Exercises: Level 3
+#1 Write a function called is_prime, which checks if a number is prime.
+pop = int(input('Give a number: '))
+def isPrime(p):
+    if pop/pop==1:
+        print('That is s a prime number.')
+    elif pop/1==pop:
+        print('That is s a prime number.')
+    else:
+        print('Not a prime number')
+print(isPrime(pop))
+
+#2 Write a functions which checks if all items are unique in the list.
+
+
+#3 Write a function which checks if all the items of the list are of the same data type.
+
+
+#4 Write a function which check if provided variable is a valid python variable
+
+
+#5 Go to the data folder and access the countries-data.py file.
+# Create a function called the most_spoken_languages in the world. It should return 10 or 20 most spoken languages in the world in descending order
+# Create a function called the most_populated_countries. It should return 10 or 20 most populated countries in descending order.
