@@ -99,9 +99,9 @@ for F in reversed(fruits):
 '''
 
 #3 Go to the data folder and use the countries_data.py file.
-                                                    #What are the total number of languages in the data
-                                                    #Find the ten most spoken languages from the data
-                                                    #Find the 10 most populated countries in the world
+#What are the total number of languages in the data
+#Find the ten most spoken languages from the data
+#Find the 10 most populated countries in the world
 
 import COUNTRIES as lol
 paises = lol.paiSES
