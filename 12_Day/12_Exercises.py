@@ -1,4 +1,3 @@
-'''
                                         #Exercises: Level 1
 #1 Write a function which generates a six digit/character random_user_id.
 from modulos import randomUserID
@@ -38,7 +37,7 @@ print(generateColors('rgb',3))
 from modulos import shuffleList
 lola=[90,'winter',78,3,'chocolate']
 print('La lista mezclada:',shuffleList(lola))
-'''
+
 #2 Write a function which returns an array of seven random numbers in a range of 0-9. 
 # All the numbers must be unique.
 from modulos import uniqueRandomNumbers
