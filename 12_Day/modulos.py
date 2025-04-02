@@ -19,7 +19,45 @@ idGenerado=userByUser(nu,car)
 print(f'ID generado: {idGenerado}')
 
 #3 COLORS
-red=85
-green=170
-blue=255
-#def rgbColorGen():
+import random
+def rgbColorGen():
+    return f'The color is: {(random.randint(0,255),random.randint(0,255),random.randint(0,255))}'
+print(rgbColorGen())
+
+#4 HEXA COLORS
+import random
+def hexaColors(hex):
+    hexC=['#'+''.join(random.choices('012346789abcdef',k=6))for _ in range(hex)]
+    return hexC
+print(hexaColors(3))
+
+#5 LIST OF RGB COLORS
+import random
+def listOfRgbColors(rgb):
+    rgbCol=[f'rgb({random.randint(0,255)},{random.randint(0,255)},{random.randint(0,255)})'for _ in range(rgb)]
+    return rgbCol
+print(listOfRgbColors(3))
+
+#6 GENERATE HEXA OR RGB COLORS
+def generateColors(colorType,v):
+    if colorType=='hexa':
+        return hexaColors(v)
+    elif colorType=='rgb':
+        return listOfRgbColors(v)
+    else:
+        return "tipo de color no válido. Usa 'hexa' o 'rgb'."
+print(generateColors('hexa',6))
+print(generateColors('rgb',6))
+
+#7 SHUFFLE LIST
+import random
+def shuffleList(list):
+    random.shuffle(list)
+    return list
+print(shuffleList([22,23,24,25,26,27,28]))
+
+#8 UNIQUE RANDOM NUMBERS
+import random
+def uniqueRandomNumbers():
+    return random.sample(range(10),7)
+print(uniqueRandomNumbers())
