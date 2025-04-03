@@ -135,3 +135,5 @@ for valor in the10:
             print(idioma,valor)
 
 print('')
+
+print("revisado")
