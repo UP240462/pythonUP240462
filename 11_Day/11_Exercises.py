@@ -288,7 +288,17 @@ for valor in the10:
 
 print('')
 
-
 # Create a function called the most_populated_countries. 
 # It should return 10 or 20 most populated countries in descending order.
+def paisesMasPoblados():
+    dictPoblacion = {
+    }
+    for pais in datos:
+        dictPoblacion[pais['name']] = pais['population']
+    
+    sortValuesPopulation = sorted(dictPoblacion.values(), reverse= True)
+    sorfkeysPopulation = sorted(dictPoblacion, key= dictPoblacion.get, reverse=True)
+
+    return sorfkeysPopulation[:10],sortValuesPopulation[:10]
+print(paisesMasPoblados())
 
