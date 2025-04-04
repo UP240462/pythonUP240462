@@ -133,3 +133,6 @@ if 'is_married' in profile and 'country' in profile:
         print(f'{profile["first_name"]} {profile["last_name"]} lives in Finland. She is married.')
     else:
         print(f'{profile["first_name"]} {profile["last_name"]} lives in {profile["country"]}.She is not married.')
+
+
+print("revisado")
