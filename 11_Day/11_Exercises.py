@@ -1,4 +1,3 @@
-'''
                                          #Exercises: Level 1
 #1 Declare a function add_two_numbers. It takes two parameters and it returns a sum.
 def addTwoNumbers():
@@ -241,7 +240,7 @@ def sameType(lista):
     return all(isinstance(i, type(lista[0])) for i in lista)
 print(sameType([1,8,9]))
 print(sameType([1,'nein',78]))
-'''
+
 #4 Write a function which check if provided variable is a valid python variable
 import keyword
 def validVar(nombre):
@@ -253,10 +252,10 @@ print(validVar('for'))
 #5 Go to the data folder and access the countries-data.py file.
 # Create a function called the most_spoken_languages in the world. 
 # It should return 10 or 20 most spoken languages in the world in descending order
-import COUNTRIES as lol
+from dataCount import paiSES
 def mostSpokenLanguages():
-    import COUNTRIES as lol
-paises = lol.paiSES
+    import dataCount as lol
+paises = paiSES
 idioms = list()
 repTdioma=0
 for pais in paises:
@@ -293,7 +292,7 @@ print('')
 def paisesMasPoblados():
     dictPoblacion = {
     }
-    for pais in datos:
+    for pais in paiSES:
         dictPoblacion[pais['name']] = pais['population']
     
     sortValuesPopulation = sorted(dictPoblacion.values(), reverse= True)
@@ -301,4 +300,3 @@ def paisesMasPoblados():
 
     return sorfkeysPopulation[:10],sortValuesPopulation[:10]
 print(paisesMasPoblados())
-
