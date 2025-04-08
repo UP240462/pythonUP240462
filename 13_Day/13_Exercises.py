@@ -54,3 +54,5 @@ b = y_intercept(x1, y1, m)  # Calculate y-intercept
 
 print(f"Slope (m): {m}")
 print(f"Y-Intercept (b): {b}")
+
+print("revisado")
